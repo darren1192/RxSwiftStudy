@@ -9,8 +9,9 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     var tableView: UITableView!
     let disposeBag = DisposeBag()
     override func viewDidLoad() {
@@ -20,21 +21,39 @@ class ViewController: UIViewController {
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         self.view.addSubview(tableView)
         
-        let items = Observable.just(["RxDataSources用法", "test2", "test3", "test4"])
+        let items = Observable.just([
+                SectionModel.init(model: "基础控件", items: [
+                    "UILabel",
+                    "UITextField/UITextView",
+                    ]),
+                SectionModel.init(model: "高级控件", items: [
+                    "UITableView",
+                    "UICollectionView"
+                    ])
+            ])
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (ds, tv, index, element) in
+            let cell = tv.dequeueReusableCell(withIdentifier: "Cell")
+            cell?.textLabel?.text = element
+            return cell!
+        })
+        dataSource.titleForHeaderInSection = { ds, index in
+            return ds.sectionModels[index].model
+        }
+        // 绑定单元格数据
+        items.bind(to: tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+        self.tableView.rx.setDelegate(self)
+            .disposed(by: disposeBag)
         
-        items.bind(to: self.tableView.rx.items){ (tableView, row, element) in
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-            cell.textLabel?.text = "\(row)：\(element)"
-            return cell
-            }.disposed(by: disposeBag)
         
         self.tableView.rx.itemSelected.subscribe(onNext: { indexPath in
             print("选中项的indexPath为：\(indexPath)")
-            self.navigationController?.pushViewController(RxDataSourcesViewController(), animated: true)
+
         }).disposed(by: disposeBag)
         
         self.tableView.rx.modelSelected(String.self).subscribe(onNext: { item in
-            print("选中项的标题为：\(item)")
+            self.pushVC(to: item)
+            
         }).disposed(by: disposeBag)
         
         self.tableView.rx.itemDeleted.subscribe(onNext: { indexPath in
@@ -45,8 +64,30 @@ class ViewController: UIViewController {
             
             print("删除的内容为：\($0)")
         }).disposed(by: disposeBag)
+ 
     }
     
+    
+    func pushVC(to vcName: String){
+        switch vcName {
+        case "UILabel":
+            self.navigationController?.pushViewController(LabelViewController(), animated: true)
+        case "UITextField/UITextView":
+            self.navigationController?.pushViewController(TextFieldViewController(), animated: true)
+        default:
+            break
+        }
+    }
 
 }
 
+extension ViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 40
+    }
+}

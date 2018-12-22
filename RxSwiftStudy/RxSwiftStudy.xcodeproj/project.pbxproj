@@ -14,7 +14,9 @@
 		971307B421CCDB750003E67B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971307B221CCDB750003E67B /* LaunchScreen.storyboard */; };
 		971307BF21CCDB750003E67B /* RxSwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971307BE21CCDB750003E67B /* RxSwiftStudyTests.swift */; };
 		971307CA21CCDB750003E67B /* RxSwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971307C921CCDB750003E67B /* RxSwiftStudyUITests.swift */; };
-		971307D821CCDC210003E67B /* RxDataSourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971307D721CCDC210003E67B /* RxDataSourcesViewController.swift */; };
+		9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEE921CE0643007AAD0F /* LabelViewController.swift */; };
+		9786EEED21CE0B1F007AAD0F /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */; };
+		9786EEEF21CE0B3F007AAD0F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEEE21CE0B3F007AAD0F /* BaseViewController.swift */; };
 		E335AF730FDC81448C7EBF68 /* Pods_RxSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7183F836C65A95F2F307C /* Pods_RxSwiftStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +54,9 @@
 		971307C521CCDB750003E67B /* RxSwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		971307C921CCDB750003E67B /* RxSwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyUITests.swift; sourceTree = "<group>"; };
 		971307CB21CCDB750003E67B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		971307D721CCDC210003E67B /* RxDataSourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourcesViewController.swift; sourceTree = "<group>"; };
+		9786EEE921CE0643007AAD0F /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		9786EEEE21CE0B3F007AAD0F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				971307A921CCDB730003E67B /* AppDelegate.swift */,
+				9786EEEE21CE0B3F007AAD0F /* BaseViewController.swift */,
 				971307AB21CCDB730003E67B /* ViewController.swift */,
-				971307D721CCDC210003E67B /* RxDataSourcesViewController.swift */,
+				9786EEEB21CE0B17007AAD0F /* UITextField */,
+				9786EEE421CE0526007AAD0F /* UILabel */,
 				971307AD21CCDB730003E67B /* Main.storyboard */,
 				971307B021CCDB750003E67B /* Assets.xcassets */,
 				971307B221CCDB750003E67B /* LaunchScreen.storyboard */,
@@ -142,6 +148,22 @@
 				971307CB21CCDB750003E67B /* Info.plist */,
 			);
 			path = RxSwiftStudyUITests;
+			sourceTree = "<group>";
+		};
+		9786EEE421CE0526007AAD0F /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				9786EEE921CE0643007AAD0F /* LabelViewController.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		9786EEEB21CE0B17007AAD0F /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 		D7831456FEB40F1EFECD086A /* Frameworks */ = {
@@ -348,9 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9786EEEF21CE0B3F007AAD0F /* BaseViewController.swift in Sources */,
+				9786EEED21CE0B1F007AAD0F /* TextFieldViewController.swift in Sources */,
 				971307AC21CCDB730003E67B /* ViewController.swift in Sources */,
 				971307AA21CCDB730003E67B /* AppDelegate.swift in Sources */,
-				971307D821CCDC210003E67B /* RxDataSourcesViewController.swift in Sources */,
+				9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
