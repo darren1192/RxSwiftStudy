@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class LabelViewController: BaseViewController {
+class LabelViewController: UIViewController {
 
     let disposeBag = DisposeBag()
     
@@ -18,7 +18,8 @@ class LabelViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-
+        self.view.backgroundColor = UIColor.white
+        
         let label = UILabel.init(frame: CGRect.init(x: 20, y: 120, width: 200, height: 30))
         label.textColor = UIColor.black
         label.text = "--"
@@ -30,7 +31,8 @@ class LabelViewController: BaseViewController {
             .bind(to: label.rx.text)
             .disposed(by: disposeBag)
         
+        
     }
-    
+
 
 }

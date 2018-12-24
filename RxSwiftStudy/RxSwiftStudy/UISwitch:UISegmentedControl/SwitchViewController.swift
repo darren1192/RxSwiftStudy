@@ -1,22 +1,36 @@
 //
-//  BaseViewController.swift
+//  SwitchViewController.swift
 //  RxSwiftStudy
 //
-//  Created by share2glory on 2018/12/22.
+//  Created by share2glory on 2018/12/24.
 //  Copyright © 2018 WH. All rights reserved.
 //
-//  每次设置背景颜色很麻烦，所以写一个基类
+
 import UIKit
 import RxSwift
 import RxCocoa
-class BaseViewController: UIViewController {
+class SwitchViewController: UIViewController {
 
+   
+    @IBOutlet weak var testSwitch: UISwitch!
+    
+    @IBOutlet weak var showLabel: UILabel!
+    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
+
         // Do any additional setup after loading the view.
+        
+        testSwitch.rx.isOn.asObservable()
+                        .subscribe(onNext: {
+                            print("当前开关状态：\($0)")
+                        })
+                        .disposed(by: disposeBag)
+ 
+        testSwitch.rx.isOn.bind(to: showLabel.rx.isHidden)
+                        .disposed(by: disposeBag)
     }
-    
+
 
     /*
     // MARK: - Navigation

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwitchViewController" customModule="RxSwiftStudy" customModuleProvider="target">
+            <connections>
+                <outlet property="showLabel" destination="UVY-on-jO1" id="xIi-HQ-aoq"/>
+                <outlet property="testSwitch" destination="BHB-XG-Scg" id="sjC-io-h3q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BHB-XG-Scg">
+                    <rect key="frame" x="164" y="328" width="49" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="1VN-Fs-vnd"/>
+                        <constraint firstAttribute="height" constant="31" id="ZD1-K0-GWd"/>
+                    </constraints>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVY-on-jO1">
+                    <rect key="frame" x="166.5" y="379" width="42" height="21"/>
+                    <color key="backgroundColor" red="0.51372549020000002" green="0.83529411760000005" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4Rt-hT-ZM5"/>
+                        <constraint firstAttribute="width" constant="42" id="nRy-iQ-0Rw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BHB-XG-Scg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="crD-ra-h6L"/>
+                <constraint firstItem="BHB-XG-Scg" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="jVD-L0-1ys"/>
+                <constraint firstItem="UVY-on-jO1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="r6L-Em-L6Z"/>
+                <constraint firstItem="UVY-on-jO1" firstAttribute="top" secondItem="BHB-XG-Scg" secondAttribute="bottom" constant="20" id="rb6-XC-3tF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class ViewController: BaseViewController {
+class ViewController: UIViewController {
     var tableView: UITableView!
     let disposeBag = DisposeBag()
     override func viewDidLoad() {
@@ -25,6 +25,9 @@ class ViewController: BaseViewController {
                 SectionModel.init(model: "基础控件", items: [
                     "UILabel",
                     "UITextField/UITextView",
+                    "UIButton",
+                    "UISwitch",
+                    "UISegmentedControl"
                     ]),
                 SectionModel.init(model: "高级控件", items: [
                     "UITableView",
@@ -74,6 +77,12 @@ class ViewController: BaseViewController {
             self.navigationController?.pushViewController(LabelViewController(), animated: true)
         case "UITextField/UITextView":
             self.navigationController?.pushViewController(TextFieldViewController(), animated: true)
+        case "UIButton":
+            self.navigationController?.pushViewController(ButtonViewController(), animated: true)
+        case "UISwitch":
+            self.navigationController?.pushViewController(SwitchViewController(), animated: true)
+        case "UISegmentedControl":
+            self.navigationController?.pushViewController(SegmentedControlViewController(), animated: true)
         default:
             break
         }
@@ -89,5 +98,14 @@ extension ViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 40
+    }
+}
+
+extension Reactive where Base : UIView {
+    public var backgroundColor: Binder<UIColor> {
+        return Binder(self.base){
+            view, color in
+            view.backgroundColor = color
+        }
     }
 }
