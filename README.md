@@ -8,3 +8,17 @@ RxSwiftStudy 用于记录自己在RxSwift上面的学习，这不会是一个完
 是基于`RxSwift`针对于iOS开发的一个库，它通过`Extension`的方法给原生的比如`UI`控件添加了`Rx`的特性，使得我们更容易订阅和响应这些控件的事件。
 ## RxDataSources
 使用`RxSwift`对`UITableView`和`UICollectionView`的数据源做了一层包装，大大减少我们的工作量。
+
+
+
+## 增加新的方法
+```
+extension Reactive where Base : UIView {
+    public var backgroundColor: Binder<UIColor> {
+        return Binder(self.base){
+            view, color in
+            view.backgroundColor = color
+        }
+    }
+}
+```

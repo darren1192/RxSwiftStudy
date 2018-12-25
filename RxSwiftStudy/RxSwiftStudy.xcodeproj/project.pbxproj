@@ -19,6 +19,17 @@
 		9722289221D0BE0D005EA63C /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722289021D0BE0D005EA63C /* SwitchViewController.xib */; };
 		9722289521D0C22F005EA63C /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722289321D0C22F005EA63C /* SegmentedControlViewController.swift */; };
 		9722289621D0C22F005EA63C /* SegmentedControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722289421D0C22F005EA63C /* SegmentedControlViewController.xib */; };
+		976F3C4521D1DAB3002CAD2E /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C4421D1DAB3002CAD2E /* Operators.swift */; };
+		976F3C4821D1DAC1002CAD2E /* BBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C4621D1DAC1002CAD2E /* BBViewController.swift */; };
+		976F3C4921D1DAC1002CAD2E /* BBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 976F3C4721D1DAC1002CAD2E /* BBViewController.xib */; };
+		976F3C4B21D1DB94002CAD2E /* BBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C4A21D1DB94002CAD2E /* BBModel.swift */; };
+		976F3C4F21D1F813002CAD2E /* GestureRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C4E21D1F813002CAD2E /* GestureRecognizerViewController.swift */; };
+		976F3C5321D1FDEA002CAD2E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5121D1FDEA002CAD2E /* DatePickerViewController.swift */; };
+		976F3C5421D1FDEA002CAD2E /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 976F3C5221D1FDEA002CAD2E /* DatePickerViewController.xib */; };
+		976F3C5721D20106002CAD2E /* CTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5521D20106002CAD2E /* CTimerViewController.swift */; };
+		976F3C5821D20106002CAD2E /* CTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 976F3C5621D20106002CAD2E /* CTimerViewController.xib */; };
+		976F3C5C21D2106E002CAD2E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5B21D2106E002CAD2E /* TableViewController.swift */; };
+		976F3C6121D217A6002CAD2E /* ReloadTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5F21D217A6002CAD2E /* ReloadTableVC.swift */; };
 		9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEE921CE0643007AAD0F /* LabelViewController.swift */; };
 		9786EEED21CE0B1F007AAD0F /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */; };
 		E335AF730FDC81448C7EBF68 /* Pods_RxSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7183F836C65A95F2F307C /* Pods_RxSwiftStudy.framework */; };
@@ -63,6 +74,17 @@
 		9722289021D0BE0D005EA63C /* SwitchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
 		9722289321D0C22F005EA63C /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
 		9722289421D0C22F005EA63C /* SegmentedControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlViewController.xib; sourceTree = "<group>"; };
+		976F3C4421D1DAB3002CAD2E /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		976F3C4621D1DAC1002CAD2E /* BBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBViewController.swift; sourceTree = "<group>"; };
+		976F3C4721D1DAC1002CAD2E /* BBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBViewController.xib; sourceTree = "<group>"; };
+		976F3C4A21D1DB94002CAD2E /* BBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBModel.swift; sourceTree = "<group>"; };
+		976F3C4E21D1F813002CAD2E /* GestureRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerViewController.swift; sourceTree = "<group>"; };
+		976F3C5121D1FDEA002CAD2E /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		976F3C5221D1FDEA002CAD2E /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		976F3C5521D20106002CAD2E /* CTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTimerViewController.swift; sourceTree = "<group>"; };
+		976F3C5621D20106002CAD2E /* CTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTimerViewController.xib; sourceTree = "<group>"; };
+		976F3C5B21D2106E002CAD2E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		976F3C5F21D217A6002CAD2E /* ReloadTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadTableVC.swift; sourceTree = "<group>"; };
 		9786EEE921CE0643007AAD0F /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +151,10 @@
 			children = (
 				971307A921CCDB730003E67B /* AppDelegate.swift */,
 				971307AB21CCDB730003E67B /* ViewController.swift */,
+				976F3C5A21D21065002CAD2E /* UITableView */,
+				976F3C5021D1FDD7002CAD2E /* UIDatePicker */,
+				976F3C4D21D1F7FF002CAD2E /* UIGestureRecognizer */,
+				976F3C4321D1DA97002CAD2E /* 双向绑定 */,
 				9722288C21D0BDCB005EA63C /* UISwitch:UISegmentedControl */,
 				9722288921D08A7E005EA63C /* UIButton */,
 				9786EEEB21CE0B17007AAD0F /* UITextField */,
@@ -176,6 +202,45 @@
 				9722289421D0C22F005EA63C /* SegmentedControlViewController.xib */,
 			);
 			path = "UISwitch:UISegmentedControl";
+			sourceTree = "<group>";
+		};
+		976F3C4321D1DA97002CAD2E /* 双向绑定 */ = {
+			isa = PBXGroup;
+			children = (
+				976F3C4421D1DAB3002CAD2E /* Operators.swift */,
+				976F3C4621D1DAC1002CAD2E /* BBViewController.swift */,
+				976F3C4A21D1DB94002CAD2E /* BBModel.swift */,
+				976F3C4721D1DAC1002CAD2E /* BBViewController.xib */,
+			);
+			path = "双向绑定";
+			sourceTree = "<group>";
+		};
+		976F3C4D21D1F7FF002CAD2E /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				976F3C4E21D1F813002CAD2E /* GestureRecognizerViewController.swift */,
+			);
+			path = UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		976F3C5021D1FDD7002CAD2E /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				976F3C5121D1FDEA002CAD2E /* DatePickerViewController.swift */,
+				976F3C5221D1FDEA002CAD2E /* DatePickerViewController.xib */,
+				976F3C5521D20106002CAD2E /* CTimerViewController.swift */,
+				976F3C5621D20106002CAD2E /* CTimerViewController.xib */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		976F3C5A21D21065002CAD2E /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				976F3C5B21D2106E002CAD2E /* TableViewController.swift */,
+				976F3C5F21D217A6002CAD2E /* ReloadTableVC.swift */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 		9786EEE421CE0526007AAD0F /* UILabel */ = {
@@ -309,10 +374,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976F3C4921D1DAC1002CAD2E /* BBViewController.xib in Resources */,
 				971307B421CCDB750003E67B /* LaunchScreen.storyboard in Resources */,
 				9722289621D0C22F005EA63C /* SegmentedControlViewController.xib in Resources */,
 				971307B121CCDB750003E67B /* Assets.xcassets in Resources */,
+				976F3C5821D20106002CAD2E /* CTimerViewController.xib in Resources */,
 				9722289221D0BE0D005EA63C /* SwitchViewController.xib in Resources */,
+				976F3C5421D1FDEA002CAD2E /* DatePickerViewController.xib in Resources */,
 				971307AF21CCDB730003E67B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,11 +469,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9722289121D0BE0D005EA63C /* SwitchViewController.swift in Sources */,
+				976F3C5C21D2106E002CAD2E /* TableViewController.swift in Sources */,
+				976F3C4521D1DAB3002CAD2E /* Operators.swift in Sources */,
 				9786EEED21CE0B1F007AAD0F /* TextFieldViewController.swift in Sources */,
 				971307AC21CCDB730003E67B /* ViewController.swift in Sources */,
 				9722289521D0C22F005EA63C /* SegmentedControlViewController.swift in Sources */,
+				976F3C6121D217A6002CAD2E /* ReloadTableVC.swift in Sources */,
 				971307AA21CCDB730003E67B /* AppDelegate.swift in Sources */,
+				976F3C4821D1DAC1002CAD2E /* BBViewController.swift in Sources */,
+				976F3C4B21D1DB94002CAD2E /* BBModel.swift in Sources */,
+				976F3C5321D1FDEA002CAD2E /* DatePickerViewController.swift in Sources */,
 				9722288B21D08B04005EA63C /* ButtonViewController.swift in Sources */,
+				976F3C5721D20106002CAD2E /* CTimerViewController.swift in Sources */,
+				976F3C4F21D1F813002CAD2E /* GestureRecognizerViewController.swift in Sources */,
 				9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

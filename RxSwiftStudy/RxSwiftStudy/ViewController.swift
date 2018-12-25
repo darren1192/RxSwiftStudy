@@ -27,11 +27,17 @@ class ViewController: UIViewController {
                     "UITextField/UITextView",
                     "UIButton",
                     "UISwitch",
-                    "UISegmentedControl"
+                    "UISegmentedControl",
+                    "UIGestureRecognizer",
+                    "UIDatePicker",
+                    "倒计时"
                     ]),
                 SectionModel.init(model: "高级控件", items: [
                     "UITableView",
                     "UICollectionView"
+                    ]),
+                SectionModel.init(model: "其它用法", items: [
+                    "双向绑定"
                     ])
             ])
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (ds, tv, index, element) in
@@ -70,8 +76,7 @@ class ViewController: UIViewController {
  
     }
     
-    
-    func pushVC(to vcName: String){
+    private func pushVC(to vcName: String){
         switch vcName {
         case "UILabel":
             self.navigationController?.pushViewController(LabelViewController(), animated: true)
@@ -83,6 +88,16 @@ class ViewController: UIViewController {
             self.navigationController?.pushViewController(SwitchViewController(), animated: true)
         case "UISegmentedControl":
             self.navigationController?.pushViewController(SegmentedControlViewController(), animated: true)
+        case "双向绑定":
+            self.navigationController?.pushViewController(BBViewController(), animated: true)
+        case "UIGestureRecognizer":
+            self.navigationController?.pushViewController(GestureRecognizerViewController(), animated: true)
+        case "UIDatePicker":
+            self.navigationController?.pushViewController(DatePickerViewController(), animated: true)
+        case "倒计时":
+            self.navigationController?.pushViewController(CTimerViewController(), animated: true)
+        case "UITableView":
+            self.navigationController?.pushViewController(TableViewController(), animated: true)
         default:
             break
         }
