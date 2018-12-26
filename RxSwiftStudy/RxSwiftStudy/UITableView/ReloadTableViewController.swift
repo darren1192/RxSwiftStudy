@@ -1,5 +1,5 @@
 //
-//  ReloadTableVC.swift
+//  ReloadTableViewController.swift
 //  RxSwiftStudy
 //
 //  Created by share2glory on 2018/12/25.
@@ -11,15 +11,18 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class ReloadTableVC: UIViewController {
+class ReloadTableViewController: UIViewController {
 
     var tableView: UITableView!
+    
     var searchBar: UISearchBar!
+    
     let disposeBag = DisposeBag()
     
-    
     var refreshButton: UIButton!
+    
     var cancelButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

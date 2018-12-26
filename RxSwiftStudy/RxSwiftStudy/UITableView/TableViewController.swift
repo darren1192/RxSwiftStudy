@@ -20,7 +20,7 @@ class TableViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = UIColor.white
         
         self.tableView = UITableView.init(frame: self.view.bounds)
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -29,7 +29,7 @@ class TableViewController: UIViewController {
         let sections = Observable.just([
             MySection.init(header: "自定义Section", items: [
                 "数据刷新+过滤",
-                "编辑表格"
+                "样式修改"
                 ])
             ])
         let dataSource = RxTableViewSectionedAnimatedDataSource<MySection>(
@@ -50,11 +50,11 @@ class TableViewController: UIViewController {
         self.tableView.rx.modelSelected(String.self).subscribe(onNext: {
             switch $0 {
             case "数据刷新+过滤":
-                self.navigationController?.pushViewController(ReloadTableVC(), animated: true)
-            case "刷新过滤":
-                self.navigationController?.pushViewController(ReloadTableVC(), animated: true)
+                self.navigationController?.pushViewController(ReloadTableViewController(), animated: true)
             case "编辑表格":
-                self.navigationController?.pushViewController(ReloadTableVC(), animated: true)
+                self.navigationController?.pushViewController(EditTableViewController(), animated: true)
+            case "样式修改":
+                self.navigationController?.pushViewController(CustomTableViewController(), animated: true)
             default:
                 break
             }

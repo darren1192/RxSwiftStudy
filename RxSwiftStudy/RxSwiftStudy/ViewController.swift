@@ -98,6 +98,8 @@ class ViewController: UIViewController {
             self.navigationController?.pushViewController(CTimerViewController(), animated: true)
         case "UITableView":
             self.navigationController?.pushViewController(TableViewController(), animated: true)
+        case "UICollectionView":
+            self.navigationController?.pushViewController(CollectionViewViewController(), animated: true)
         default:
             break
         }

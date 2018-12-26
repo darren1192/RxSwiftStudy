@@ -29,9 +29,13 @@
 		976F3C5721D20106002CAD2E /* CTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5521D20106002CAD2E /* CTimerViewController.swift */; };
 		976F3C5821D20106002CAD2E /* CTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 976F3C5621D20106002CAD2E /* CTimerViewController.xib */; };
 		976F3C5C21D2106E002CAD2E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5B21D2106E002CAD2E /* TableViewController.swift */; };
-		976F3C6121D217A6002CAD2E /* ReloadTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5F21D217A6002CAD2E /* ReloadTableVC.swift */; };
+		976F3C6121D217A6002CAD2E /* ReloadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5F21D217A6002CAD2E /* ReloadTableViewController.swift */; };
 		9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEE921CE0643007AAD0F /* LabelViewController.swift */; };
 		9786EEED21CE0B1F007AAD0F /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */; };
+		97EBF20521D34A610057F03F /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBF20421D34A610057F03F /* EditTableViewController.swift */; };
+		97EBF20821D3571F0057F03F /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBF20721D3571F0057F03F /* CustomTableViewController.swift */; };
+		97EBF20C21D3614A0057F03F /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBF20B21D3614A0057F03F /* CollectionViewViewController.swift */; };
+		97EBF20E21D367F50057F03F /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBF20D21D367F50057F03F /* MyCollectionViewCell.swift */; };
 		E335AF730FDC81448C7EBF68 /* Pods_RxSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7183F836C65A95F2F307C /* Pods_RxSwiftStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,9 +88,13 @@
 		976F3C5521D20106002CAD2E /* CTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTimerViewController.swift; sourceTree = "<group>"; };
 		976F3C5621D20106002CAD2E /* CTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTimerViewController.xib; sourceTree = "<group>"; };
 		976F3C5B21D2106E002CAD2E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		976F3C5F21D217A6002CAD2E /* ReloadTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadTableVC.swift; sourceTree = "<group>"; };
+		976F3C5F21D217A6002CAD2E /* ReloadTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadTableViewController.swift; sourceTree = "<group>"; };
 		9786EEE921CE0643007AAD0F /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		97EBF20421D34A610057F03F /* EditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
+		97EBF20721D3571F0057F03F /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		97EBF20B21D3614A0057F03F /* CollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
+		97EBF20D21D367F50057F03F /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 			children = (
 				971307A921CCDB730003E67B /* AppDelegate.swift */,
 				971307AB21CCDB730003E67B /* ViewController.swift */,
+				97EBF20A21D361360057F03F /* UICollectionView */,
 				976F3C5A21D21065002CAD2E /* UITableView */,
 				976F3C5021D1FDD7002CAD2E /* UIDatePicker */,
 				976F3C4D21D1F7FF002CAD2E /* UIGestureRecognizer */,
@@ -238,7 +247,9 @@
 			isa = PBXGroup;
 			children = (
 				976F3C5B21D2106E002CAD2E /* TableViewController.swift */,
-				976F3C5F21D217A6002CAD2E /* ReloadTableVC.swift */,
+				976F3C5F21D217A6002CAD2E /* ReloadTableViewController.swift */,
+				97EBF20421D34A610057F03F /* EditTableViewController.swift */,
+				97EBF20721D3571F0057F03F /* CustomTableViewController.swift */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -257,6 +268,15 @@
 				9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */,
 			);
 			path = UITextField;
+			sourceTree = "<group>";
+		};
+		97EBF20A21D361360057F03F /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				97EBF20B21D3614A0057F03F /* CollectionViewViewController.swift */,
+				97EBF20D21D367F50057F03F /* MyCollectionViewCell.swift */,
+			);
+			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		D7831456FEB40F1EFECD086A /* Frameworks */ = {
@@ -473,16 +493,20 @@
 				976F3C4521D1DAB3002CAD2E /* Operators.swift in Sources */,
 				9786EEED21CE0B1F007AAD0F /* TextFieldViewController.swift in Sources */,
 				971307AC21CCDB730003E67B /* ViewController.swift in Sources */,
+				97EBF20521D34A610057F03F /* EditTableViewController.swift in Sources */,
 				9722289521D0C22F005EA63C /* SegmentedControlViewController.swift in Sources */,
-				976F3C6121D217A6002CAD2E /* ReloadTableVC.swift in Sources */,
+				976F3C6121D217A6002CAD2E /* ReloadTableViewController.swift in Sources */,
 				971307AA21CCDB730003E67B /* AppDelegate.swift in Sources */,
 				976F3C4821D1DAC1002CAD2E /* BBViewController.swift in Sources */,
+				97EBF20821D3571F0057F03F /* CustomTableViewController.swift in Sources */,
 				976F3C4B21D1DB94002CAD2E /* BBModel.swift in Sources */,
 				976F3C5321D1FDEA002CAD2E /* DatePickerViewController.swift in Sources */,
 				9722288B21D08B04005EA63C /* ButtonViewController.swift in Sources */,
 				976F3C5721D20106002CAD2E /* CTimerViewController.swift in Sources */,
+				97EBF20E21D367F50057F03F /* MyCollectionViewCell.swift in Sources */,
 				976F3C4F21D1F813002CAD2E /* GestureRecognizerViewController.swift in Sources */,
 				9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */,
+				97EBF20C21D3614A0057F03F /* CollectionViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
