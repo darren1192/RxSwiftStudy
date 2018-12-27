@@ -38,6 +38,11 @@ class ViewController: UIViewController {
                     ]),
                 SectionModel.init(model: "其它用法", items: [
                     "双向绑定"
+                    ]),
+                SectionModel.init(model: "网络请求", items: [
+                    "RxAlamofire请求",
+                    "RxAlamofire结果处理",
+                    "RxAlamofire自定义结果"
                     ])
             ])
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (ds, tv, index, element) in
@@ -61,7 +66,7 @@ class ViewController: UIViewController {
         }).disposed(by: disposeBag)
         
         self.tableView.rx.modelSelected(String.self).subscribe(onNext: { item in
-            self.pushVC(to: item)
+            self.selectVC(to: item)
             
         }).disposed(by: disposeBag)
         
@@ -76,33 +81,43 @@ class ViewController: UIViewController {
  
     }
     
-    private func pushVC(to vcName: String){
+    private func selectVC(to vcName: String){
         switch vcName {
         case "UILabel":
-            self.navigationController?.pushViewController(LabelViewController(), animated: true)
+            self.pushVC(to: LabelViewController())
         case "UITextField/UITextView":
-            self.navigationController?.pushViewController(TextFieldViewController(), animated: true)
+            self.pushVC(to: TextFieldViewController())
         case "UIButton":
-            self.navigationController?.pushViewController(ButtonViewController(), animated: true)
+            self.pushVC(to: ButtonViewController())
         case "UISwitch":
-            self.navigationController?.pushViewController(SwitchViewController(), animated: true)
+            self.pushVC(to: SwitchViewController())
         case "UISegmentedControl":
-            self.navigationController?.pushViewController(SegmentedControlViewController(), animated: true)
+            self.pushVC(to: SegmentedControlViewController())
         case "双向绑定":
-            self.navigationController?.pushViewController(BBViewController(), animated: true)
+            self.pushVC(to: BBViewController())
         case "UIGestureRecognizer":
-            self.navigationController?.pushViewController(GestureRecognizerViewController(), animated: true)
+            self.pushVC(to: GestureRecognizerViewController())
         case "UIDatePicker":
-            self.navigationController?.pushViewController(DatePickerViewController(), animated: true)
+            self.pushVC(to: DatePickerViewController())
         case "倒计时":
-            self.navigationController?.pushViewController(CTimerViewController(), animated: true)
+            self.pushVC(to: CTimerViewController())
         case "UITableView":
-            self.navigationController?.pushViewController(TableViewController(), animated: true)
+            self.pushVC(to: TableViewController())
         case "UICollectionView":
-            self.navigationController?.pushViewController(CollectionViewViewController(), animated: true)
+            self.pushVC(to: CollectionViewViewController())
+        case "RxAlamofire请求":
+            self.pushVC(to: RxAlamofireViewController())
+        case "RxAlamofire结果处理":
+            self.pushVC(to: RxAlamofireJsonViewController())
+        case "RxAlamofire自定义结果":
+            self.pushVC(to: RxAlamofireCViewController())
         default:
             break
         }
+    }
+    
+    private func pushVC(to vc: UIViewController){
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
