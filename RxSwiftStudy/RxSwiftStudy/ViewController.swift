@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = "RxSwift示例"
+        
         self.tableView = UITableView.init(frame: self.view.bounds)
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         self.view.addSubview(tableView)
@@ -42,7 +45,10 @@ class ViewController: UIViewController {
                 SectionModel.init(model: "网络请求", items: [
                     "RxAlamofire请求",
                     "RxAlamofire结果处理",
-                    "RxAlamofire自定义结果"
+                    "RxAlamofire自定义结果",
+                    "RxMoya请求",
+                    "RxMoya结果处理",
+                    "RxMoya自定义结果"
                     ])
             ])
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (ds, tv, index, element) in
@@ -111,6 +117,12 @@ class ViewController: UIViewController {
             self.pushVC(to: RxAlamofireJsonViewController())
         case "RxAlamofire自定义结果":
             self.pushVC(to: RxAlamofireCViewController())
+        case "RxMoya请求":
+            self.pushVC(to: RxMoyaViewController())
+        case "RxMoya结果处理":
+            self.pushVC(to: RxMoyaJsonViewController())
+        case "RxMoya自定义结果":
+            self.pushVC(to: RxMoyaCViewController())
         default:
             break
         }

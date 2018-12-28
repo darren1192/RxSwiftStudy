@@ -18,7 +18,7 @@ RxSwiftStudy 用于记录自己在RxSwift上面的学习，这不会是一个完
 `HandyJSON`是一个用于`Swift`语言中的`JSON`序列化/反序列化库。（我目前使用的）
 
 
-## 增加新的方法
+## 如何增加新的属性？
 ```
 extension Reactive where Base : UIView {
     public var backgroundColor: Binder<UIColor> {
@@ -29,3 +29,8 @@ extension Reactive where Base : UIView {
     }
 }
 ```
+
+另附之前我写过一些关于`RxSwift`基础用法[地址在此](https://www.jianshu.com/p/cb5d37116dd2)
+## 参考：
+[航哥](http://www.hangge.com/)
+[RxSwift中文文档](https://beeth0ven.github.io/RxSwift-Chinese-Documentation/)

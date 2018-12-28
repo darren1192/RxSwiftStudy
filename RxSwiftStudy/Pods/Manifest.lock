@@ -2,6 +2,8 @@ PODS:
   - Alamofire (4.8.0)
   - Differentiator (3.1.0)
   - HandyJSON (4.2.1)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
   - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.0)
@@ -27,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - HandyJSON
+  - Moya
   - Moya/RxSwift
   - ObjectMapper
   - RxAlamofire
@@ -47,6 +50,6 @@ SPEC CHECKSUMS:
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 0e227da6511ca7c8a3421f91025b72660fe77017
+PODFILE CHECKSUM: 1a25d263b766bdafd94c2d04b600e12f3f62d825
 
 COCOAPODS: 1.4.0

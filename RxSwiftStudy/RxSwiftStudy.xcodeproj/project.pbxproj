@@ -39,6 +39,15 @@
 		976F3C6121D217A6002CAD2E /* ReloadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F3C5F21D217A6002CAD2E /* ReloadTableViewController.swift */; };
 		9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEE921CE0643007AAD0F /* LabelViewController.swift */; };
 		9786EEED21CE0B1F007AAD0F /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */; };
+		979CE66921D5F9F800A00C06 /* DouBanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE66821D5F9F800A00C06 /* DouBanAPI.swift */; };
+		979CE66C21D603D900A00C06 /* RxMoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE66A21D603D900A00C06 /* RxMoyaViewController.swift */; };
+		979CE66D21D603D900A00C06 /* RxMoyaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979CE66B21D603D900A00C06 /* RxMoyaViewController.xib */; };
+		979CE67021D607D100A00C06 /* RxMoyaJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE66E21D607D100A00C06 /* RxMoyaJsonViewController.swift */; };
+		979CE67121D607D100A00C06 /* RxMoyaJsonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979CE66F21D607D100A00C06 /* RxMoyaJsonViewController.xib */; };
+		979CE67421D6104E00A00C06 /* RxMoyaCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE67221D6104E00A00C06 /* RxMoyaCViewController.swift */; };
+		979CE67521D6104E00A00C06 /* RxMoyaCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979CE67321D6104E00A00C06 /* RxMoyaCViewController.xib */; };
+		979CE67921D6128100A00C06 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE67821D6128100A00C06 /* ListModel.swift */; };
+		979CE67D21D6160E00A00C06 /* RxMoya+HandyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE67C21D6160E00A00C06 /* RxMoya+HandyJson.swift */; };
 		97EBF20521D34A610057F03F /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBF20421D34A610057F03F /* EditTableViewController.swift */; };
 		97EBF20821D3571F0057F03F /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBF20721D3571F0057F03F /* CustomTableViewController.swift */; };
 		97EBF20C21D3614A0057F03F /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBF20B21D3614A0057F03F /* CollectionViewViewController.swift */; };
@@ -105,6 +114,15 @@
 		976F3C5F21D217A6002CAD2E /* ReloadTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadTableViewController.swift; sourceTree = "<group>"; };
 		9786EEE921CE0643007AAD0F /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		9786EEEC21CE0B1F007AAD0F /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		979CE66821D5F9F800A00C06 /* DouBanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBanAPI.swift; sourceTree = "<group>"; };
+		979CE66A21D603D900A00C06 /* RxMoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaViewController.swift; sourceTree = "<group>"; };
+		979CE66B21D603D900A00C06 /* RxMoyaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxMoyaViewController.xib; sourceTree = "<group>"; };
+		979CE66E21D607D100A00C06 /* RxMoyaJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaJsonViewController.swift; sourceTree = "<group>"; };
+		979CE66F21D607D100A00C06 /* RxMoyaJsonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxMoyaJsonViewController.xib; sourceTree = "<group>"; };
+		979CE67221D6104E00A00C06 /* RxMoyaCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaCViewController.swift; sourceTree = "<group>"; };
+		979CE67321D6104E00A00C06 /* RxMoyaCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxMoyaCViewController.xib; sourceTree = "<group>"; };
+		979CE67821D6128100A00C06 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		979CE67C21D6160E00A00C06 /* RxMoya+HandyJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxMoya+HandyJson.swift"; sourceTree = "<group>"; };
 		97EBF20421D34A610057F03F /* EditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
 		97EBF20721D3571F0057F03F /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		97EBF20B21D3614A0057F03F /* CollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +256,15 @@
 				976EB4BC21D4AC5F0077D17A /* RxAlamofireCViewController.swift */,
 				976EB4BD21D4AC5F0077D17A /* RxAlamofireCViewController.xib */,
 				976EB4C021D4ADEC0077D17A /* ObjectMapperModel.swift */,
+				979CE66A21D603D900A00C06 /* RxMoyaViewController.swift */,
+				979CE66B21D603D900A00C06 /* RxMoyaViewController.xib */,
+				979CE66E21D607D100A00C06 /* RxMoyaJsonViewController.swift */,
+				979CE66F21D607D100A00C06 /* RxMoyaJsonViewController.xib */,
+				979CE67221D6104E00A00C06 /* RxMoyaCViewController.swift */,
+				979CE67321D6104E00A00C06 /* RxMoyaCViewController.xib */,
+				979CE66821D5F9F800A00C06 /* DouBanAPI.swift */,
+				979CE67821D6128100A00C06 /* ListModel.swift */,
+				979CE67C21D6160E00A00C06 /* RxMoya+HandyJson.swift */,
 			);
 			path = "网络请求";
 			sourceTree = "<group>";
@@ -423,16 +450,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979CE66D21D603D900A00C06 /* RxMoyaViewController.xib in Resources */,
 				976F3C4921D1DAC1002CAD2E /* BBViewController.xib in Resources */,
 				971307B421CCDB750003E67B /* LaunchScreen.storyboard in Resources */,
 				976EB4B521D49A390077D17A /* RxAlamofireViewController.xib in Resources */,
 				9722289621D0C22F005EA63C /* SegmentedControlViewController.xib in Resources */,
 				971307B121CCDB750003E67B /* Assets.xcassets in Resources */,
+				979CE67121D607D100A00C06 /* RxMoyaJsonViewController.xib in Resources */,
 				976EB4BB21D4A5950077D17A /* RxAlamofireJsonViewController.xib in Resources */,
 				976F3C5821D20106002CAD2E /* CTimerViewController.xib in Resources */,
 				9722289221D0BE0D005EA63C /* SwitchViewController.xib in Resources */,
 				976F3C5421D1FDEA002CAD2E /* DatePickerViewController.xib in Resources */,
 				976EB4BF21D4AC5F0077D17A /* RxAlamofireCViewController.xib in Resources */,
+				979CE67521D6104E00A00C06 /* RxMoyaCViewController.xib in Resources */,
 				971307AF21CCDB730003E67B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,11 +563,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9722289121D0BE0D005EA63C /* SwitchViewController.swift in Sources */,
+				979CE66C21D603D900A00C06 /* RxMoyaViewController.swift in Sources */,
 				976F3C5C21D2106E002CAD2E /* TableViewController.swift in Sources */,
 				976F3C4521D1DAB3002CAD2E /* Operators.swift in Sources */,
+				979CE67021D607D100A00C06 /* RxMoyaJsonViewController.swift in Sources */,
 				976EB4B421D49A390077D17A /* RxAlamofireViewController.swift in Sources */,
 				976EB4BA21D4A5950077D17A /* RxAlamofireJsonViewController.swift in Sources */,
 				9786EEED21CE0B1F007AAD0F /* TextFieldViewController.swift in Sources */,
+				979CE67421D6104E00A00C06 /* RxMoyaCViewController.swift in Sources */,
 				971307AC21CCDB730003E67B /* ViewController.swift in Sources */,
 				97EBF20521D34A610057F03F /* EditTableViewController.swift in Sources */,
 				9722289521D0C22F005EA63C /* SegmentedControlViewController.swift in Sources */,
@@ -545,11 +578,14 @@
 				971307AA21CCDB730003E67B /* AppDelegate.swift in Sources */,
 				976F3C4821D1DAC1002CAD2E /* BBViewController.swift in Sources */,
 				97EBF20821D3571F0057F03F /* CustomTableViewController.swift in Sources */,
+				979CE66921D5F9F800A00C06 /* DouBanAPI.swift in Sources */,
 				976F3C4B21D1DB94002CAD2E /* BBModel.swift in Sources */,
 				976F3C5321D1FDEA002CAD2E /* DatePickerViewController.swift in Sources */,
 				9722288B21D08B04005EA63C /* ButtonViewController.swift in Sources */,
+				979CE67921D6128100A00C06 /* ListModel.swift in Sources */,
 				976F3C5721D20106002CAD2E /* CTimerViewController.swift in Sources */,
 				97EBF20E21D367F50057F03F /* MyCollectionViewCell.swift in Sources */,
+				979CE67D21D6160E00A00C06 /* RxMoya+HandyJson.swift in Sources */,
 				976F3C4F21D1F813002CAD2E /* GestureRecognizerViewController.swift in Sources */,
 				976EB4C121D4ADEC0077D17A /* ObjectMapperModel.swift in Sources */,
 				9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */,

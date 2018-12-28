@@ -6,6 +6,7 @@ target 'RxSwiftStudy' do
     pod 'RxDataSources'
     pod 'RxAlamofire'
     pod 'ObjectMapper'
+    pod 'Moya'
     pod 'Moya/RxSwift'
     pod 'HandyJSON'
 end
