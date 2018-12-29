@@ -13,7 +13,7 @@ RxSwiftStudy 用于记录自己在RxSwift上面的学习，这不会是一个完
 ## ObjectMapper
 `ObjectMapper`是一个使用`Swift`语言编写的数据模型转换框架。使用它，我们可以很方便地将模型对象（类和结构体）转换为`JSON`，或者根据`JSON`生成对应的模型对象。
 ## Moya 
-`Moya`是一个帮助我们管理`Alamofire`的网络管理层，可以让我们去更清晰的去管理我们的网络请求
+`Moya`是一个帮助我们管理`Alamofire`的网络管理层，可以让我们去更清晰的去管理我们的网络请求。
 ## HandyJSON
 `HandyJSON`是一个用于`Swift`语言中的`JSON`序列化/反序列化库。（我目前使用的）
 
@@ -30,7 +30,7 @@ extension Reactive where Base : UIView {
 }
 ```
 
-另附之前我写过一些关于`RxSwift`基础用法[地址在此](https://www.jianshu.com/p/cb5d37116dd2)
+另附之前我写过一些关于`RxSwift`基础用法:[地址](https://www.jianshu.com/p/cb5d37116dd2)
 ## 参考：
 [航哥](http://www.hangge.com/)
 [RxSwift中文文档](https://beeth0ven.github.io/RxSwift-Chinese-Documentation/)
