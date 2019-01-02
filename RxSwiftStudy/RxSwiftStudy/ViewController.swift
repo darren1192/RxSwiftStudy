@@ -40,7 +40,8 @@ class ViewController: UIViewController {
                     "UICollectionView"
                     ]),
                 SectionModel.init(model: "其它用法", items: [
-                    "双向绑定"
+                    "双向绑定",
+                    "MVVM样例：注册页"
                     ]),
                 SectionModel.init(model: "网络请求", items: [
                     "RxAlamofire请求",
@@ -123,6 +124,8 @@ class ViewController: UIViewController {
             self.pushVC(to: RxMoyaJsonViewController())
         case "RxMoya自定义结果":
             self.pushVC(to: RxMoyaCViewController())
+        case "MVVM样例：注册页":
+            self.pushVC(to: SignupViewController())
         default:
             break
         }
