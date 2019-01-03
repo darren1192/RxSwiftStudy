@@ -30,7 +30,7 @@ extension Reactive where Base : UIView {
 }
 ```
 
-另附之前我写过一些关于`RxSwift`基础用法[地址在此](https://www.jianshu.com/p/cb5d37116dd2)
+另附之前我写过一些关于`RxSwift`基础用法:[地址](https://www.jianshu.com/p/cb5d37116dd2)
 
 ## 参考：
 [航哥](http://www.hangge.com/)

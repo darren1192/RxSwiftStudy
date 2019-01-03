@@ -51,8 +51,7 @@ class SignupViewController: UIViewController {
         viewModel.signupResult.drive(onNext: { result in
             print("注册:\(result ? "成功" : "失败")")
         }).disposed(by: disposeBag)
-        
-        
+    
     }
 
 
