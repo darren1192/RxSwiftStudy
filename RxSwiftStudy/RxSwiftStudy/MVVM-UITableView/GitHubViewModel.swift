@@ -34,8 +34,7 @@ class GitHubViewModel {
             .flatMapLatest{
                 GitHubProvider.rx.request(.repositories($0))
                             .filterSuccessfulStatusCodes()
-                            .asObservable()
-                            .mapModel(T: GitHubRepositories.self)
+                            .mapModels(T: GitHubRepositories.self)
                             .asDriver(onErrorDriveWith: Driver.empty())
             }
         

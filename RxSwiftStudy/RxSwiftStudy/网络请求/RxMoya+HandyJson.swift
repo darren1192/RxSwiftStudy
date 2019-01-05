@@ -15,10 +15,18 @@ import Moya
 
 extension ObservableType where E == Response {
     public func mapModel<T: HandyJSON>(T: T.Type) -> Observable<T> {
+        
         return flatMap({ (response) -> Observable<T> in
-            print(T.self)
             return Observable.just(response.mapModel(type: T.self))
         })
+    }
+}
+
+extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Response {
+    func mapModels<T: HandyJSON>(T: T.Type) -> Single<T>{
+        return flatMap{ response -> Single<T> in
+            return Single.just(response.mapModel(type: T.self))
+        }
     }
 }
 
@@ -29,5 +37,8 @@ extension Response {
             return modelT
         }
         return JSONDeserializer<T>.deserializeFrom(json: "{msg:’请求有误‘}")!
+
     }
 }
+
+

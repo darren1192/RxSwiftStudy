@@ -9,4 +9,5 @@ target 'RxSwiftStudy' do
     pod 'Moya'
     pod 'Moya/RxSwift'
     pod 'HandyJSON'
+    pod 'MJRefresh'
 end

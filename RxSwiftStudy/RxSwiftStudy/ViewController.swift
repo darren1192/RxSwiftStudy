@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         self.title = "RxSwift示例"
         
         self.tableView = UITableView.init(frame: self.view.bounds)
@@ -40,9 +40,7 @@ class ViewController: UIViewController {
                     "UICollectionView"
                     ]),
                 SectionModel.init(model: "其它用法", items: [
-                    "双向绑定",
-                    "MVVM样例：注册页",
-                    "MVVM样例：UITableView"
+                    "双向绑定"
                     ]),
                 SectionModel.init(model: "网络请求", items: [
                     "RxAlamofire请求",
@@ -51,6 +49,11 @@ class ViewController: UIViewController {
                     "RxMoya请求",
                     "RxMoya结果处理",
                     "RxMoya自定义结果"
+                    ]),
+                SectionModel.init(model: "样例", items: [
+                    "MVVM样例：注册页",
+                    "MVVM样例：UITableView",
+                    "MVVM样例：小说搜索"
                     ])
             ])
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (ds, tv, index, element) in
@@ -129,6 +132,8 @@ class ViewController: UIViewController {
             self.pushVC(to: SignupViewController())
         case "MVVM样例：UITableView":
             self.pushVC(to: GithubSearchViewController())
+        case "MVVM样例：小说搜索":
+            self.pushVC(to: SearchNovelViewController())
         default:
             break
         }
