@@ -38,10 +38,11 @@ class SearchNovelViewController: UIViewController {
         self.tableView.tableHeaderView = self.searchBar
         
         self.tableView.mj_header = MJRefreshNormalHeader()
+        self.tableView.mj_footer = MJRefreshBackNormalFooter()
         
         let searchAction = self.searchBar.rx.text.orEmpty.asDriver().throttle(0.5).distinctUntilChanged()
         
-        let viewModel = SearchNovelViewModel.init(searchAction: searchAction, headerRefresh: self.tableView.mj_header.rx.refreshing.asDriver(), footerRefresh: <#Driver<Void>#>,disposeBag: disposeBag)
+        let viewModel = SearchNovelViewModel.init(searchAction: searchAction, headerRefresh: self.tableView.mj_header.rx.refreshing.asDriver(), footerRefresh: self.tableView.mj_footer.rx.refreshing.asDriver(),disposeBag: disposeBag)
 
         viewModel.seacrhItem.asDriver().drive(tableView.rx.items){
             (tablebiew, row, element) in
@@ -49,7 +50,8 @@ class SearchNovelViewController: UIViewController {
             cell.data = element
             return cell
             }.disposed(by: disposeBag)
-        viewModel.endHeaderRefreshing.drive(self.tableView.mj_header.rx.endRefreshing).disposed(by: disposeBag)
+    viewModel.endHeaderRefreshing.drive(self.tableView.mj_header.rx.endRefreshing).disposed(by: disposeBag)
+    viewModel.endFooterRefreshing.drive(self.tableView.mj_header.rx.endRefreshing).disposed(by: disposeBag)
         
         self.tableView.rx.setDelegate(self).disposed(by: disposeBag)
         

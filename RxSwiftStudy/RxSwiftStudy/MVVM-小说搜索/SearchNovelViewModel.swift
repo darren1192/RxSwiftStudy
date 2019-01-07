@@ -11,6 +11,10 @@ import RxSwift
 import RxCocoa
 import Moya
 
+// 各项数据暂时写死，只是为了演示效果
+
+
+
 class SearchNovelViewModel {
     
     let searchAction: Driver<String>
@@ -34,20 +38,13 @@ class SearchNovelViewModel {
                                     .mapModels(T: SearchNovelModel.self)
                                     .asDriver(onErrorDriveWith: Driver.empty())
             }
-        
-        self.endHeaderRefreshing = searchResult.map{ _ in true }
-        self.endFooterRefreshing = searchResult.map{ _ in true }
-        
-        searchResult.drive(onNext: { (item) in
-            self.seacrhItem.accept(item.books!)
-        }).disposed(by: disposeBag)
-        
+
         let headerRefreshData = headerRefresh.flatMapLatest{
             SearchNovelProvider.rx.request(.search("小虎", 0, 20))
                 .filterSuccessfulStatusCodes()
                 .mapModels(T: SearchNovelModel.self)
                 .asDriver(onErrorDriveWith: Driver.empty())
-            }
+        }
         
         let footerRefreshData = footerRefresh.flatMapLatest{
             SearchNovelProvider.rx.request(.search("小虎", 1, 20))
@@ -56,17 +53,23 @@ class SearchNovelViewModel {
                 .asDriver(onErrorDriveWith: Driver.empty())
         }
         
+        self.endHeaderRefreshing = headerRefreshData.map{ _ in true}
+        
+        self.endFooterRefreshing = footerRefreshData.map{ _ in true}
+        
+        
+        searchResult.drive(onNext: { (item) in
+            self.seacrhItem.accept(item.books!)
+        }).disposed(by: disposeBag)
+        
         headerRefreshData.drive(onNext: { item in
             self.seacrhItem.accept(item.books!)
         }).disposed(by: disposeBag)
         
         footerRefreshData.drive(onNext: { item in
-            self.seacrhItem.accept(self.seacrhItem.value + item)
+            self.seacrhItem.accept(self.seacrhItem.value + item.books!)
         }).disposed(by: disposeBag)
         
-        self.endHeaderRefreshing = headerRefreshData.map{ _ in true}
-       
-        self.endFooterRefreshing = footerRefreshData.map{ _ in true}
         
     }
     
