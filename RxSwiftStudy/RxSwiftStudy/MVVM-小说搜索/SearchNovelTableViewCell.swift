@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SearchNovelTableViewCell: UITableViewCell {
 
+    private lazy var imageV: UIImageView = {
+        let imageV = UIImageView()
+        imageV.contentMode = UIView.ContentMode.scaleAspectFit
+        return imageV
+    }()
+    
     private lazy var titleLabel: UILabel = {
         let label = UILabel.init()
         label.textColor = UIColor.black
@@ -33,6 +40,15 @@ class SearchNovelTableViewCell: UITableViewCell {
             if let title = data?.title {
                 titleLabel.text = title
             }
+            guard let imageCover = data?.cover else {
+                return
+            }
+            if imageCover.contains("/agent/"){
+                let range = imageCover.count - 7
+                let url = PercentEncoding.DecodeURIComponent.evaluate(string: String(imageCover.suffix(range)))
+                print(url)
+                imageV.kf.setImage(with: URL.init(string: url))
+            }
         }
     }
     
@@ -44,12 +60,17 @@ class SearchNovelTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        self.contentView.addSubview(imageV)
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(authorNameLabel)
         
-        titleLabel.frame = CGRect.init(x: 20, y: 20, width: self.contentView.bounds.width-40, height: 30)
+        imageV.frame = CGRect.init(x: 10, y: 10, width: 80, height: 80)
         
-        authorNameLabel.frame = CGRect.init(x: 20, y: 60, width: self.contentView.bounds.width-40, height: 30)
+        titleLabel.frame = CGRect.init(x: 100, y: 20, width: self.contentView.bounds.width-40, height: 30)
+        
+        authorNameLabel.frame = CGRect.init(x: 100, y: 60, width: self.contentView.bounds.width-40, height: 30)
+        
+        
         
     }
     

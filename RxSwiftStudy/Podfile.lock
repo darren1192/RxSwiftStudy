@@ -2,6 +2,8 @@ PODS:
   - Alamofire (4.8.0)
   - Differentiator (3.1.0)
   - HandyJSON (4.2.1)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Kingfisher (5.0.0)
   - MJRefresh (3.1.15.7)
   - Moya (12.0.1):
     - Moya/Core (= 12.0.1)
@@ -30,6 +32,8 @@ PODS:
 
 DEPENDENCIES:
   - HandyJSON
+  - IQKeyboardManagerSwift
+  - Kingfisher
   - MJRefresh
   - Moya
   - Moya/RxSwift
@@ -43,6 +47,8 @@ SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Kingfisher: 2b0dd651e4fe5a07305b8242fde56f8e2d410f58
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
@@ -53,6 +59,6 @@ SPEC CHECKSUMS:
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 75a6758210bb730d7e69e09046c5e4703225e423
+PODFILE CHECKSUM: bead2e5dc1462c8a2339dc2665ea1591c59541fe
 
 COCOAPODS: 1.4.0

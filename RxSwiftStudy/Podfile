@@ -10,4 +10,6 @@ target 'RxSwiftStudy' do
     pod 'Moya/RxSwift'
     pod 'HandyJSON'
     pod 'MJRefresh'
+    pod ‘Kingfisher’
+    pod 'IQKeyboardManagerSwift'
 end

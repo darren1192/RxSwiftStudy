@@ -16,6 +16,11 @@ RxSwiftStudy 用于记录自己在RxSwift上面的学习，这不会是一个完
 `Moya`是一个帮助我们管理`Alamofire`的网络管理层，可以让我们去更清晰的去管理我们的网络请求。
 ## HandyJSON
 `HandyJSON`是一个用于`Swift`语言中的`JSON`序列化/反序列化库。（我目前使用的）
+## Kingfisher
+`KingFisher`是瞄神用`Swift`写的用来异步下载图片并且缓存至内存的轻量级框架。
+## MJRefresh
+常用的下拉刷新上拉加载的库。
+
 
 
 ## 如何增加新的属性？

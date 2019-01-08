@@ -24,6 +24,8 @@
 		9722289221D0BE0D005EA63C /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722289021D0BE0D005EA63C /* SwitchViewController.xib */; };
 		9722289521D0C22F005EA63C /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722289321D0C22F005EA63C /* SegmentedControlViewController.swift */; };
 		9722289621D0C22F005EA63C /* SegmentedControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722289421D0C22F005EA63C /* SegmentedControlViewController.xib */; };
+		972B794821E48CC300867862 /* PercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B794721E48CC300867862 /* PercentEncoding.swift */; };
+		972B794921E4950000867862 /* PercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B794721E48CC300867862 /* PercentEncoding.swift */; };
 		973A4EEF21DC9E9100BB3C11 /* GitHubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A4EEE21DC9E9100BB3C11 /* GitHubNetworkService.swift */; };
 		973A4EF321DCA37300BB3C11 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973A4EF121DCA37300BB3C11 /* SignupViewController.swift */; };
 		973A4EF421DCA37300BB3C11 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 973A4EF221DCA37300BB3C11 /* SignupViewController.xib */; };
@@ -116,6 +118,7 @@
 		9722289021D0BE0D005EA63C /* SwitchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
 		9722289321D0C22F005EA63C /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
 		9722289421D0C22F005EA63C /* SegmentedControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlViewController.xib; sourceTree = "<group>"; };
+		972B794721E48CC300867862 /* PercentEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentEncoding.swift; sourceTree = "<group>"; };
 		973A4EEE21DC9E9100BB3C11 /* GitHubNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNetworkService.swift; sourceTree = "<group>"; };
 		973A4EF121DCA37300BB3C11 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		973A4EF221DCA37300BB3C11 /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
@@ -315,6 +318,7 @@
 				97483D6521DF3FB600D28D98 /* SearchNovelModel.swift */,
 				97483D6721DF40EB00D28D98 /* SearchNovelViewModel.swift */,
 				97168E2121E04EA000AC228A /* MJRefresh+Rx.swift */,
+				972B794721E48CC300867862 /* PercentEncoding.swift */,
 			);
 			path = "MVVM-小说搜索";
 			sourceTree = "<group>";
@@ -586,6 +590,8 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -601,6 +607,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -678,6 +686,7 @@
 				973A4EF621DCA40E00BB3C11 /* ValidationResult.swift in Sources */,
 				976EB4C121D4ADEC0077D17A /* ObjectMapperModel.swift in Sources */,
 				9786EEEA21CE0643007AAD0F /* LabelViewController.swift in Sources */,
+				972B794821E48CC300867862 /* PercentEncoding.swift in Sources */,
 				973A4EF821DCA66800BB3C11 /* GitHubSignupService.swift in Sources */,
 				976EB4BE21D4AC5F0077D17A /* RxAlamofireCViewController.swift in Sources */,
 				97483D6221DF303F00D28D98 /* SearchNovelTableViewCell.swift in Sources */,
@@ -698,6 +707,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				973A4EF921DCA88200BB3C11 /* GitHubSignupService.swift in Sources */,
+				972B794921E4950000867862 /* PercentEncoding.swift in Sources */,
 				971307CA21CCDB750003E67B /* RxSwiftStudyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
